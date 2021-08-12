@@ -1,0 +1,24 @@
+\documentclass[a4paper,11pt]{book}
+\input{../templates/structure_epub.tex}
+\include{defines.tex}
+% Book's title and subtitle
+\title{\Huge \textbf{\BookName}  \\ \huge Сборник статей}
+% Author
+\author{\textsc{\AuthorName}\thanks{\url{www.example.com}}}
+
+
+\begin{document}
+
+%\frontmatter
+\label{tablecont}
+\maketitle
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\mainmatter
+
+\include{Data/Caesar_and_money/text.tex}
+\include{Data/antic_technocrash/text.tex}
+\printbibliography
+\end{document}
