@@ -1,0 +1,34 @@
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T2A]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{lmodern}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[english,russian]{babel}
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+\usepackage[style=numeric,citestyle=numeric,backend=biber]{biblatex}
+%\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+\addbibresource{bibliography.bib} % BibTeX bibliography file
+\geometry{
+	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=2cm, % Top margin
+	bottom=2cm, % Bottom margin
+	left=2cm, % Left margin
+	right=2cm, % Right margin
+	headheight=14pt, % Header height
+	footskip=1.4cm, % Space from the bottom margin to the baseline of the footer
+	headsep=10pt, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+\graphicspath{{Data/}}
+\newenvironment{textcitation}
+{\itshape}
+{}
+
+
+
+\newenvironment{remark}
+{\itshape}
+{}
+

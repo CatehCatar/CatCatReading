@@ -1,0 +1,35 @@
+\documentclass[a4paper,11pt]{book}
+\input{../templates/structure_epub.tex}
+\include{defines.tex}
+% Book's title and subtitle
+\title{\Huge \textbf{\BookName}  \\ \huge Сборник статей}
+% Author
+\author{\textsc{\AuthorName}}
+
+\begin{document}
+\maketitle
+%\label{tablecont}
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\mainmatter
+
+\include{Data/History_Yosya/text.tex}
+\include{Data/History_Fenix/text.tex}
+\include{Data/History_Tabett/text.tex}
+\include{Data/History_BenNun/text.tex}
+
+\include{Data/Dolina_0/text.tex}
+%
+\include{Data/Dolina_1/text.tex}
+%
+\include{Data/Dolina_2/text.tex}
+%
+\include{Data/Dolina_3/text.tex}
+\include{Data/Dolina_4/text.tex}
+\include{Data/Dolina_5/text.tex}
+\include{Data/Dolina_6/text.tex}
+
+%\printbibliography
+\end{document}
