@@ -1,0 +1,29 @@
+\documentclass[a4paper,11pt]{book}
+\input{../templates/structure_epub.tex}
+\include{defines.tex}
+% Book's title and subtitle
+\title{\Huge \textbf{\BookName}  \\ \huge Сборник статей}
+% Author
+\author{\textsc{\AuthorName}\thanks{\url{www.example.com}}}
+
+
+\begin{document}
+
+%\frontmatter
+\label{tablecont}
+\maketitle
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\mainmatter
+
+\include{Data/Vybory_V_Dumu/text.tex}
+\include{Data/Rasputinschina/text.tex}
+
+\include{Data/RYAV_propaganda/text.tex}
+\include{Data/RYAV_predposylki/text.tex}
+
+
+%\printbibliography
+\end{document}
