@@ -1,14 +1,29 @@
 \usepackage[utf8]{inputenc} % Required for including letters with accents
 \usepackage[T2A]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english,russian]{babel}
 \usepackage{lmodern}
-
+%\usepackage{fontspec}
+%\setmainfont{Georgia} 
 \usepackage{hyperref}
 \usepackage{graphicx}
-\usepackage[english,russian]{babel}
+
+
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \usepackage[style=numeric,citestyle=numeric,backend=biber]{biblatex}
+
+\usepackage{lipsum} % Inserts dummy text
+
+\usepackage{tikz} % Required for drawing custom shapes
+
+\usepackage{enumitem} % Customize lists
+
+\usepackage{booktabs} % Required for nicer horizontal rules in tables
+
+\usepackage{xcolor} % Required for specifying colors by name
+%\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
 %\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 \addbibresource{bibliography.bib} % BibTeX bibliography file
+\usepackage{ulem}
 \geometry{
 	paper=a4paper, % Paper size, change to letterpaper for US letter size
 	top=2cm, % Top margin
@@ -23,7 +38,7 @@
 
 \graphicspath{{Data/}}
 \newenvironment{textcitation}
-{\itshape}
+{\itshape  }
 {}
 
 
