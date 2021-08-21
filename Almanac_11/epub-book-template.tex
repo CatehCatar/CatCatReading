@@ -1,0 +1,26 @@
+\documentclass[a4paper,11pt]{book}
+\input{../templates/structure_epub.tex}
+\include{defines.tex}
+% Book's title and subtitle
+\title{\Huge \textbf{\BookName}  \\ \huge Сборник статей}
+% Author
+\author{\textsc{\AuthorName}\thanks{\url{www.example.com}}}
+
+
+\begin{document}
+
+%\frontmatter
+\label{tablecont}
+\maketitle
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+\mainmatter
+
+\include{Data/Dartmud/text.tex}
+\include{Data/KubaUSSR/text.tex}
+\include{Data/Orlovskiy/text.tex}
+
+%\printbibliography
+\end{document}
